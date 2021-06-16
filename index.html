@@ -10,11 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="css/main.css">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
   <div class="container">
@@ -36,10 +32,14 @@
         <p> Hello fellow shoppers! We're currently building our new fashion store. 
           Add your email below to stay up-to-date with announcements and our launch deals.</p>
         <div class="form-input">
-          <form>
-            <input type="text" name="email" id="email" value="Email Address">
+          <form onkeypress="return event.keyCode != 13">
+            <input type="text" id="email" placeholder="Email Address">
           </form>
-          <a href="" class="button"><img src="images/icon-arrow.svg" alt=""></a>
+          <button class="button">
+            <img src="images/icon-arrow.svg" alt="">
+          </button>
+          <img id="error" src="images/icon-error.svg" alt="">
+          <p id="tulisan-error" style="display: none;">Please provide a valid email</p>
         </div>
       </div>
     </div>
@@ -50,5 +50,6 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer> -->
+  <script src="js/emailvalidation.js"></script>
 </body>
 </html>

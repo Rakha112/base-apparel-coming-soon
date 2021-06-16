@@ -129,7 +129,12 @@ body {
                 align-items: center;
                 position: relative;
                 form {
+                    border: hidden;
                     width: 100%;
+                    border: none;
+                    input:focus {
+                        outline: none;
+                    }
                     input[type=text] {
                         @media screen and (min-width: 1000px) {
                             height: 54px;
@@ -151,6 +156,7 @@ body {
                         width: 100px;
                         border-radius: 28px;
                     }
+                    border: hidden;
                     box-shadow: 0px 10px 20px hsla(0, 36%, 70%, 0.5);
                     background-image: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
                     top: 0;
@@ -171,10 +177,25 @@ body {
                     box-shadow: 0px 20px 20px hsla(0, 36%, 70%, 0.5);
                     background-image: linear-gradient(135deg,hsl(0, 83%, 88%),hsl(0, 63%, 80%));
                 }
+                .error {
+                    position: absolute;
+                    margin-left: 120px;
+                    @media screen and (min-width: 1000px) {
+                        margin-left: 200px;
+                    }
+                }
+                .tulisan-error {
+                    @media screen and (min-width: 1000px) {
+                        margin-right: 190px;
+                    }
+                    display: block;
+                    color: red;
+                    position: absolute;
+                    margin-top: 80px;
+                    margin-right: 70px;
+                }
             }
         }
     }
-    
-    
 }
 

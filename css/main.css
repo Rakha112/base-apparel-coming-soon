@@ -186,7 +186,13 @@ body {
 }
 
 .container .isi .content .form-input form {
+  border: hidden;
   width: 100%;
+  border: none;
+}
+
+.container .isi .content .form-input form input:focus {
+  outline: none;
 }
 
 .container .isi .content .form-input form input[type=text] {
@@ -208,6 +214,7 @@ body {
 }
 
 .container .isi .content .form-input .button {
+  border: hidden;
   -webkit-box-shadow: 0px 10px 20px rgba(206, 151, 151, 0.5);
           box-shadow: 0px 10px 20px rgba(206, 151, 151, 0.5);
   background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
@@ -245,5 +252,30 @@ body {
   -webkit-box-shadow: 0px 20px 20px rgba(206, 151, 151, 0.5);
           box-shadow: 0px 20px 20px rgba(206, 151, 151, 0.5);
   background-image: linear-gradient(135deg, #fac7c7, #ecacac);
+}
+
+.container .isi .content .form-input .error {
+  position: absolute;
+  margin-left: 120px;
+}
+
+@media screen and (min-width: 1000px) {
+  .container .isi .content .form-input .error {
+    margin-left: 200px;
+  }
+}
+
+.container .isi .content .form-input .tulisan-error {
+  display: block;
+  color: red;
+  position: absolute;
+  margin-top: 80px;
+  margin-right: 70px;
+}
+
+@media screen and (min-width: 1000px) {
+  .container .isi .content .form-input .tulisan-error {
+    margin-right: 190px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

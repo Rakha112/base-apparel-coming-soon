@@ -41,6 +41,7 @@ body {
 .container .content {
   text-align: center;
   padding: 0 40px;
+  margin-bottom: 100px;
 }
 
 .container .content h1 {

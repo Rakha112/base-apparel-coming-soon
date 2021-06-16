@@ -66,8 +66,10 @@ body {
 }
 
 .container .content .form-input {
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 36px;
-  width: 311px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,13 +82,17 @@ body {
   position: relative;
 }
 
+.container .content .form-input form {
+  width: 100%;
+}
+
 .container .content .form-input form input[type=text] {
   padding-left: 26px;
   border: 1px #ce9797 solid;
   background: none;
   border-radius: 24px;
   height: 46px;
-  width: 311px;
+  width: 100%;
   color: #ce9797;
 }
 

@@ -19,9 +19,12 @@ body {
 }
 
 .container {
+    display: flex;
+
+    flex-direction: column;
     min-height: 100vh;
     .logo {
-        margin: 32px 0 32px 32px;
+        margin: 28px 0 28px 40px;
         img {
             width: 30%;
         } 

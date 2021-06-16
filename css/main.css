@@ -25,6 +25,9 @@ body {
 
 .container .gambar .gambar-dekstop {
   display: none;
+}
+
+.container .gambar .gambar-mobile img {
   width: 100%;
 }
 

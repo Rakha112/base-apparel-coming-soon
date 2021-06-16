@@ -29,7 +29,13 @@ body {
     .gambar {
         .gambar-dekstop {
             display: none;
-            width: 100%;
+            
+        }
+        .gambar-mobile {
+            img {
+                width: 100%;
+            }
+            
         }
     }
     .content {

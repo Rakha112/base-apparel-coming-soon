@@ -19,89 +19,162 @@ body {
 }
 
 .container {
+    @media screen and (min-width: 1000px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
     display: flex;
-
     flex-direction: column;
     min-height: 100vh;
-    .logo {
-        margin: 28px 0 28px 40px;
-        img {
-            width: 30%;
-        } 
-    }
-    .gambar {
-        .gambar-dekstop {
-            display: none;
-            
+    .isi {
+        
+        @media screen and (min-width: 1000px) {
+            gap: 220px;
+            width: 1440px;
+            height: 800px;
+            display: grid;
+            grid-template-columns: 1fr;
+            overflow: hidden;
+            background-image: url("../images/bg-pattern-desktop.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
         }
-        .gambar-mobile {
+        .logo {
+            @media screen and (min-width: 1000px) {
+                grid-column: 1/2;
+                grid-row: 1;
+                margin: 70px 0 28px 165px;
+            }
+            margin: 28px 0 28px 40px;
             img {
-                width: 100%;
-            }
-            
-        }
-    }
-    .content {
-        text-align: center;
-        padding: 0 40px;
-        margin-bottom: 100px;
-        h1 {
-            margin: 50px 0 16px 0;
-            letter-spacing: 8px;
-            text-transform: uppercase;
-            font-weight: 300;
-            font-size: 42px;
-            color: $Desaturated-Red;
-        }
-        span {
-            color: $Dark-Grayish-Red;
-            font-weight: 600;
-        }
-        p {
-            line-height: 1.5;
-            font-weight: 400;
-            font-size: 13.5px;
-            color: $Desaturated-Red;
-        }
-        .form-input {
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 36px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            form {
-                width: 100%;
-                input[type=text] {
-                    
-                    padding-left: 26px;
-                    border: 1px $Desaturated-Red solid;
-                    background: none;
-                    border-radius: 24px;
-                    height: 46px;
-                    width: 100%;
-                    color: $Desaturated-Red;
+                @media screen and (min-width: 1000px) {
+                    width: 35%;
                 }
+                width: 30%;
+            } 
+        }
+        .gambar {
+            @media screen and (min-width: 1000px) {
+                grid-column: 2/3;
             }
-            .button {
-                box-shadow: 0px 20px 20px hsla(0, 36%, 70%, 0.5);
-                background-image: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
-                top: 0;
-                right: 0;
-                position: absolute;
-                border-radius: 24px;
-                margin-left: -100px;
+            .gambar-dekstop {
+                display: none;
+                @media screen and (min-width: 1000px) {
+                    display: block;
+                    img {
+                        width: 100%;
+                    }
+                }
+                
+            }
+            .gambar-mobile {
+                @media screen and (min-width: 1000px) {
+                    display: none;
+                }
+                img {
+                    width: 100%;
+                }
+                
+            }
+        }
+        .content {
+            @media screen and (min-width: 1000px) {
+                grid-column: 1/2;
+                grid-row: 1;
+                padding: 0;
+                margin-left: 165px;
+                margin-top: 200px;
+                text-align: left;
+    
+            }
+            text-align: center;
+            padding: 0 40px;
+            margin-bottom: 100px;
+            h1 {
+                @media screen and (min-width: 1000px) {
+                    font-size: 66px;
+                    letter-spacing: 14px;
+                }
+                margin: 50px 0 16px 0;
+                letter-spacing: 8px;
+                text-transform: uppercase;
+                font-weight: 300;
+                font-size: 42px;
+                color: $Desaturated-Red;
+            }
+            span {
+                color: $Dark-Grayish-Red;
+                font-weight: 600;
+            }
+            p {
+                @media screen and (min-width: 1000px) {
+                    font-size: 16px;
+                    line-height: 1.75;
+                }
+                line-height: 1.5;
+                font-weight: 400;
+                font-size: 13.5px;
+                color: $Desaturated-Red;
+            }
+            .form-input {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 36px;
+                width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 64px;
-                height: 46px;
-                margin-left: -10px;
-                background-color: black;
+                position: relative;
+                form {
+                    width: 100%;
+                    input[type=text] {
+                        @media screen and (min-width: 1000px) {
+                            height: 54px;
+                            border-radius: 28px;
+                            font-size: 16px;
+                        }
+                        padding-left: 26px;
+                        border: 1px $Desaturated-Red solid;
+                        background: none;
+                        border-radius: 24px;
+                        height: 46px;
+                        width: 100%;
+                        color: $Desaturated-Red;
+                    }
+                }
+                .button {
+                    @media screen and (min-width: 1000px) {
+                        height: 54px;
+                        width: 100px;
+                        border-radius: 28px;
+                    }
+                    box-shadow: 0px 10px 20px hsla(0, 36%, 70%, 0.5);
+                    background-image: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+                    top: 0;
+                    right: 0;
+                    position: absolute;
+                    border-radius: 24px;
+                    margin-left: -100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 64px;
+                    height: 46px;
+                    margin-left: -10px;
+                    background-color: black;
+                    transition: 0.5s all ease;
+                }
+                .button:hover {
+                    box-shadow: 0px 20px 20px hsla(0, 36%, 70%, 0.5);
+                    background-image: linear-gradient(135deg,hsl(0, 83%, 88%),hsl(0, 63%, 80%));
+                }
             }
         }
     }
+    
+    
 }
 

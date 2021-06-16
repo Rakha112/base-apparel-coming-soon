@@ -22,29 +22,118 @@ body {
   min-height: 100vh;
 }
 
-.container .logo {
+@media screen and (min-width: 1000px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 100vh;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container .isi {
+    gap: 220px;
+    width: 1440px;
+    height: 800px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    overflow: hidden;
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.container .isi .logo {
   margin: 28px 0 28px 40px;
 }
 
-.container .logo img {
+@media screen and (min-width: 1000px) {
+  .container .isi .logo {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin: 70px 0 28px 165px;
+  }
+}
+
+.container .isi .logo img {
   width: 30%;
 }
 
-.container .gambar .gambar-dekstop {
+@media screen and (min-width: 1000px) {
+  .container .isi .logo img {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container .isi .gambar {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+}
+
+.container .isi .gambar .gambar-dekstop {
   display: none;
 }
 
-.container .gambar .gambar-mobile img {
+@media screen and (min-width: 1000px) {
+  .container .isi .gambar .gambar-dekstop {
+    display: block;
+  }
+  .container .isi .gambar .gambar-dekstop img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container .isi .gambar .gambar-mobile {
+    display: none;
+  }
+}
+
+.container .isi .gambar .gambar-mobile img {
   width: 100%;
 }
 
-.container .content {
+.container .isi .content {
   text-align: center;
   padding: 0 40px;
   margin-bottom: 100px;
 }
 
-.container .content h1 {
+@media screen and (min-width: 1000px) {
+  .container .isi .content {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    padding: 0;
+    margin-left: 165px;
+    margin-top: 200px;
+    text-align: left;
+  }
+}
+
+.container .isi .content h1 {
   margin: 50px 0 16px 0;
   letter-spacing: 8px;
   text-transform: uppercase;
@@ -53,19 +142,33 @@ body {
   color: #ce9797;
 }
 
-.container .content span {
+@media screen and (min-width: 1000px) {
+  .container .isi .content h1 {
+    font-size: 66px;
+    letter-spacing: 14px;
+  }
+}
+
+.container .isi .content span {
   color: #413a3a;
   font-weight: 600;
 }
 
-.container .content p {
+.container .isi .content p {
   line-height: 1.5;
   font-weight: 400;
   font-size: 13.5px;
   color: #ce9797;
 }
 
-.container .content .form-input {
+@media screen and (min-width: 1000px) {
+  .container .isi .content p {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+}
+
+.container .isi .content .form-input {
   margin-left: auto;
   margin-right: auto;
   margin-top: 36px;
@@ -82,11 +185,11 @@ body {
   position: relative;
 }
 
-.container .content .form-input form {
+.container .isi .content .form-input form {
   width: 100%;
 }
 
-.container .content .form-input form input[type=text] {
+.container .isi .content .form-input form input[type=text] {
   padding-left: 26px;
   border: 1px #ce9797 solid;
   background: none;
@@ -96,9 +199,17 @@ body {
   color: #ce9797;
 }
 
-.container .content .form-input .button {
-  -webkit-box-shadow: 0px 20px 20px rgba(206, 151, 151, 0.5);
-          box-shadow: 0px 20px 20px rgba(206, 151, 151, 0.5);
+@media screen and (min-width: 1000px) {
+  .container .isi .content .form-input form input[type=text] {
+    height: 54px;
+    border-radius: 28px;
+    font-size: 16px;
+  }
+}
+
+.container .isi .content .form-input .button {
+  -webkit-box-shadow: 0px 10px 20px rgba(206, 151, 151, 0.5);
+          box-shadow: 0px 10px 20px rgba(206, 151, 151, 0.5);
   background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
   top: 0;
   right: 0;
@@ -118,5 +229,21 @@ body {
   height: 46px;
   margin-left: -10px;
   background-color: black;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+@media screen and (min-width: 1000px) {
+  .container .isi .content .form-input .button {
+    height: 54px;
+    width: 100px;
+    border-radius: 28px;
+  }
+}
+
+.container .isi .content .form-input .button:hover {
+  -webkit-box-shadow: 0px 20px 20px rgba(206, 151, 151, 0.5);
+          box-shadow: 0px 20px 20px rgba(206, 151, 151, 0.5);
+  background-image: linear-gradient(135deg, #fac7c7, #ecacac);
 }
 /*# sourceMappingURL=main.css.map */

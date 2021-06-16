@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(135deg, white, #fff5f5);
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+.container .logo {
+  margin: 32px 0 32px 32px;
+}
+
+.container .logo img {
+  width: 100px;
+}
+
+.container .gambar .gambar-dekstop {
+  display: none;
+  width: 100%;
+}
+
+.container .content {
+  text-align: center;
+  padding: 0 40px;
+}
+
+.container .content h1 {
+  margin: 50px 0 16px 0;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 42px;
+  color: #ce9797;
+}
+
+.container .content span {
+  color: #413a3a;
+  font-weight: 600;
+}
+
+.container .content p {
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 13.5px;
+  color: #ce9797;
+}
+
+.container .content .form-input {
+  margin-top: 36px;
+  width: 311px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.container .content .form-input form input[type=text] {
+  padding-left: 26px;
+  border: 1px #ce9797 solid;
+  background: none;
+  border-radius: 24px;
+  height: 46px;
+  width: 311px;
+  color: #ce9797;
+}
+
+.container .content .form-input .button {
+  -webkit-box-shadow: 0px 20px 20px rgba(206, 151, 151, 0.5);
+          box-shadow: 0px 20px 20px rgba(206, 151, 151, 0.5);
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  top: 0;
+  right: 0;
+  position: absolute;
+  border-radius: 24px;
+  margin-left: -100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 64px;
+  height: 46px;
+  margin-left: -10px;
+  background-color: black;
+}
+/*# sourceMappingURL=main.css.map */

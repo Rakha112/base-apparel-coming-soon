@@ -179,20 +179,20 @@ body {
                 }
                 .error {
                     position: absolute;
-                    margin-left: 120px;
+                    right: 25%;
                     @media screen and (min-width: 1000px) {
                         margin-left: 200px;
                     }
                 }
                 .tulisan-error {
                     @media screen and (min-width: 1000px) {
-                        margin-right: 190px;
+                        left: 6%;
                     }
                     display: block;
                     color: red;
                     position: absolute;
                     margin-top: 80px;
-                    margin-right: 70px;
+                    left: 10%;
                 }
             }
         }

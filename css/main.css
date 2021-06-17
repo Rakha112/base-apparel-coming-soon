@@ -256,7 +256,7 @@ body {
 
 .container .isi .content .form-input .error {
   position: absolute;
-  margin-left: 120px;
+  right: 25%;
 }
 
 @media screen and (min-width: 1000px) {
@@ -270,12 +270,12 @@ body {
   color: red;
   position: absolute;
   margin-top: 80px;
-  margin-right: 70px;
+  left: 10%;
 }
 
 @media screen and (min-width: 1000px) {
   .container .isi .content .form-input .tulisan-error {
-    margin-right: 190px;
+    left: 6%;
   }
 }
 /*# sourceMappingURL=main.css.map */
